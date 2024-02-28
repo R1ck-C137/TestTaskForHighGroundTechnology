@@ -7,6 +7,7 @@ namespace TestTaskForHighGroundTechnology.Controllers
 {
     public class ListOfNumbersController : Controller
     {
+        /// <param name="list">Exemple: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15</param>
         [HttpGet]
         [Route("firstTask")]
         public ActionResult<JArray> FirstTask(string list)
@@ -21,6 +22,7 @@ namespace TestTaskForHighGroundTechnology.Controllers
             return new JArray(string.Join(", ", result));
         }
 
+        /// <param name="list">Exemple: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 60, 105, 420</param>
         [HttpGet]
         [Route("secondTask")]
         public ActionResult<JArray> SecondTask(string list)
@@ -35,6 +37,7 @@ namespace TestTaskForHighGroundTechnology.Controllers
             return new JArray(string.Join(", ", result));
         }
 
+        /// <param name="list">Exemple: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 60, 105, 420</param>
         [HttpGet]
         [Route("thirdTask")]
         public ActionResult<JArray> ThirdTask(string list) 
